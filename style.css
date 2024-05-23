@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:'Jost' , sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.logo img{
+    max-width: 150px;
+    height: auto;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: #181717;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.navbar a:hover{
+    color:#add6f6;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: #181717;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color:#2c4bb0;
+}
+#menu-icon{
+    font-size: 35px;
+    color: #005959;
+    z-index: 10001;
+    cursor: pointer;
+}
+section{
+    padding: 5% 10%;
+}
+/* Main Home Section */
+.main-home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/edited.svg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1 fr);
+    align-items: center;
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main-text h5 {
+    color: #555;
+    font-size: 20px;
+}
+
+.main-text h1 {
+    font-size: 50px;
+    margin: 20px 0;
+    color: #125e4f;
+}
+
+.main-text p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.main-btn {
+    background-color: #125e4f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 20px;
+}
+
+.down-arrow a {
+    color: #125e4f;
+    font-size: 30px;
+}
+
+/* Trending Product Section */
+.trending-product {
+    padding: 50px 10%;
+    background-color: #fff;
+}
+
+.center-text h2 {
+    color: #125e4f;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.center-text span {
+    color: #add6f6;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.row {
+    position: relative;
+    transition: all 0.4s;
+    flex: 1 1 calc(25% - 32px);
+    max-width: calc(25% - 32px);
+    margin-bottom: 32px;
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+}
+
+.row img:hover {
+    transform: scale(0.9);
+}
+
+.product-text h5 {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #7b8bf6;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+.heart-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.heart-icon:hover {
+    color: #c559c5;
+}
+
+.ratting {
+    position: absolute;
+    bottom: 10px;
+    left: 13px;
+    display: flex;
+    gap: 2px;
+}
+
+.ratting i {
+    color: #FF8C00;
+    font-size: 18px;
+}
+
+.price {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.price h4 {
+    color: #181717;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.price p {
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex: 1 1 calc(50% - 32px);
+        max-width: calc(50% - 32px);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .row {
+        flex: 1 1 calc(100% - 32px);
+        max-width: calc(100% - 32px);
+    }
+}
+
+/* Client Review Section */
+.client-reviews {
+    padding: 50px 10%;
+    background-color: #f5f5f5;
+}
+
+.reviews {
+    text-align: center;
+}
+.reviews h3{
+    color:#7b8bf6;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+.reviews img{
+    width:100px;
+    height:auto;
+    border-radius: 50px;
+    margin: 10px 0;
+
+}
